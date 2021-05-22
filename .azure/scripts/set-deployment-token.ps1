@@ -13,7 +13,7 @@ $RestMethodParameters = @{
     Method = 'POST'
 }
 
-$ApiKey  = invoke-AzRestMethod @$RestMethodParameters | 
+$ApiKey  = invoke-AzRestMethod @RestMethodParameters | 
     Select-Object -ExpandProperty Content 
     ConvertFrom-Json |
     Select-Object -ExpandProperty properties |
