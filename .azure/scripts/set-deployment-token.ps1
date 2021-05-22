@@ -14,7 +14,7 @@ $RestMethodParameters = @{
 }
 
 $ApiKey  = invoke-AzRestMethod @RestMethodParameters | 
-    Select-Object -ExpandProperty Content 
+    Select-Object -ExpandProperty Content |
     ConvertFrom-Json |
     Select-Object -ExpandProperty properties |
     Select-Object -ExpandProperty ApiKey
