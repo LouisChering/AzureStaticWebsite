@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
-environment=development
+environment=staging
 appshortname=web-app
 location="West Europe"
 
