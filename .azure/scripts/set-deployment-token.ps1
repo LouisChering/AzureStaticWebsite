@@ -6,7 +6,7 @@ param(
 $RestMethodParameters = @{
     SubscriptionId = ((get-azcontext).subscription.id)
     ResourceGroupName = $ResourceGroupName
-    ResourceGroupProvider = 'Microsoft.Web'
+    ResourceGroupProviderName = 'Microsoft.Web'
     ResourceType = 'staticSites'
     Name = "${SiteName}/listsecrets"
     ApiVersion = "2019-08-01"
