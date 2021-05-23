@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
-environment=temp
+environment=dev
 appname=web-application
 location="West Europe"
 
