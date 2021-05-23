@@ -20,7 +20,7 @@ Try{
     Select-Object -ExpandProperty properties |
     Select-Object -ExpandProperty ApiKey
 }
-Catch(error){
+Catch{
     # If something went wrong its likely the resource does not yet exist.  With an empty API key the pipeline will attempt to create resources.
     $ApiKey = ''
 }
